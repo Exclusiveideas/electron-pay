@@ -1,0 +1,321 @@
+.knowMore {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    color: black;
+}
+
+.knowMore.row_reverse {
+    flex-direction: row-reverse;
+}
+
+.knowMore_left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.svg_circ_one {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 25%;
+    right: 15px;
+    animation: bounce_around_three 10s linear infinite alternate;
+}
+
+.svg_circ_two {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 38%;
+    left: 18%;
+    animation: bounce_around_one 10s linear infinite alternate;
+}
+
+.svg_circ_one_reverse {
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    top: 20%;
+    right: 23%;
+    animation: bounce_around_two 10s linear infinite alternate;
+}
+
+.knowMore_left img {
+    width: 60%;
+}
+
+.knowMore_right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    padding: 6rem 3rem;
+}
+
+.knowMore_right_info {
+    width: 62%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 10px;
+}
+
+.knowMore_right_info_one {
+    display: flex;
+    align-items: center;
+}
+
+.knowMore_right_info_one p {
+    color: #6fd0a2;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.knowMore_right_info_two h1 {
+    font-size: 2.6rem;
+    color: black;
+}
+
+.knowMore_right_info_three {
+    margin-bottom: 1rem;
+}
+
+.knowMore_right_info_three p {
+    color: #838383;
+    font-size: 15px;
+    text-align: left;
+    line-height: 1rem;
+}
+
+.knowMore_right_info_four {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.know_more {
+    width: 100px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 2.6rem;
+    font-size: 13px;
+    font-weight: 300;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.know_more:hover {
+    transform: scale(1.05);
+}
+
+.svg_circ_three {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 35%;
+    right: 35%;
+    animation: bounce_around_two 10s linear infinite alternate;
+}
+
+.svg_circ_two_reverse {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    right: 12%;
+    animation: bounce_around_three 10s linear infinite alternate;
+}
+
+.svg_circ_three_reverse {
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 17%;
+    left: 13%;
+    animation: bounce_around_one 10s linear infinite alternate;
+}
+
+
+@keyframes bounce_around_one {
+    0% {
+        transform: translateX(-30px);
+    }
+
+    25% {
+        transform: translateY(40px);
+    }
+
+    50% {
+        transform: translateZ(10px);
+    }
+
+    75% {
+        transform: translateX(-10px) translateY(10px) translateZ(5px);
+    }
+
+    100% {
+        transform: translateX(0px) translateY(0px) translateZ(0px);
+    }
+
+}
+
+
+@keyframes bounce_around_two {
+    0% {
+        transform: translateX(-20px);
+    }
+
+    25% {
+        transform: translateY(20px);
+    }
+
+    50% {
+        transform: translateZ(10px);
+    }
+
+    75% {
+        transform: translateX(-10px) translateY(10px) translateZ(5px);
+    }
+
+    100% {
+        transform: translateX(0px) translateY(0px) translateZ(0px);
+    }
+
+}
+
+@keyframes bounce_around_three {
+    0% {
+        transform: translateX(-10px);
+    }
+
+    25% {
+        transform: translateY(40px);
+    }
+
+    50% {
+        transform: translateZ(10px);
+    }
+
+    75% {
+        transform: translateX(-5px) translateY(10px) translateZ(5px);
+    }
+
+    100% {
+        transform: translateX(0px) translateY(0px) translateZ(0px);
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .knowMore_left img {
+        width: 70%
+    }
+
+    .knowMore_right_info {
+        width: 80%;
+    }
+
+    .svg_circ_three {
+        display: none;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .knowMore_left img {
+        width: 90%
+    }
+
+    .knowMore_right {
+        padding: 6rem 1rem;
+    }
+
+    .knowMore_right_info {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 569px) {
+    .knowMore {
+        flex-direction: column-reverse;
+        padding: 5rem 0 0 0;
+    }
+
+    .knowMore.row_reverse {
+        flex-direction: column;
+    }
+
+    .knowMore_left {
+        width: 100%;
+        height: 50%;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .knowMore_left img {
+        height: 90%;
+        object-fit: contain;
+    }
+
+    .knowMore_right {
+        width: 100%;
+        padding: 0;
+        height: 50%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .knowMore_right div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .knowMore_right_info_four .know_more {
+        width: 100px;
+    }
+
+    .knowMore_right div p {
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .knowMore_right_info_three p {
+        font-size: 13px;
+    }
+
+    .knowMore_right_info_four .know_more {
+        font-size: 11.5px;
+        padding: 3px;
+    }
+}
+
+
+@media (max-width: 395px) {
+    .knowMore {
+        flex-direction: column-reverse;
+        padding: 2rem 0 0 0;
+    }
+
+    .svg_circ_one_reverse {
+        display: none;
+    }
+} 

@@ -1,0 +1,133 @@
+.application {
+    height: 110vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    background-color: #f8f9ff;
+    padding: 2rem 0;
+    box-sizing: border-box;
+}
+
+.main_text {
+    flex: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    text-align: center;
+    padding: 5px;
+}
+
+.main_text h1 {
+    color: black;
+    font-size: 38px;
+}
+
+.app_images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 3.8;
+    gap: 10px;
+    padding: 0 1rem;
+    z-index: 99;
+}
+
+
+.larger .mobile_app {
+    height: 470px;
+}
+
+.mobile_app {
+    width: 100%;
+    height: 390px;
+}
+
+.download_buttons {
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.appstore {
+    display: flex;
+    width: 160px;
+    padding: 6px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 7px;
+    background-color: black;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.appstore:hover {
+    transform: scale(1.02);
+}
+
+.appstore_logo {
+    width: 29px;
+    cursor: pointer;
+    height: 27px;
+}
+
+.playstore_info p {
+    font-size: 10.5px;
+    color: white;
+}
+
+.playstore_info h3 {
+    color: white;
+}
+
+
+@media (max-width: 569px) {
+
+    .main_text h1 {
+        font-size: 34px;
+    }
+
+    .app_images {
+        padding: 0;
+    }
+
+    .app_image:nth-child(1),
+    .app_image:nth-child(3) {
+        display: none;
+    }
+
+    .app_image:nth-child(2) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .larger .mobile_app {
+        height: 70%;
+        width: 70%;
+    }
+
+    .appstore {
+        width: 140px;
+        padding: 4px;
+        border-radius: 7px;
+        background-color: black;
+    }
+
+    .appstore_logo {
+        width: 26px;
+        height: 24px;
+    }
+
+    .playstore_info p {
+        font-size: 9.5px;
+    }
+
+    .playstore_info h3 {
+        font-size: 16px;
+    }
+}
