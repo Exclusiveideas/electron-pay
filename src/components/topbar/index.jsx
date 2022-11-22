@@ -8,7 +8,7 @@ const Topbar = () => {
   const [firstLoad, setFirstLoad] = useState(false);
 
   const openNav = () => {
-    setFirstLoad(true)
+    setFirstLoad(true);
     setNavOpen(true);
   };
 
@@ -45,17 +45,57 @@ const Topbar = () => {
         </div>
         <div className="nav_menu">
           <ul className="nav_menuList">
-            <Link activeClass="activeLink" spy smooth to="features">
+            <Link className="links" activeClass="activeLink" spy smooth to="features">
               <li>Features</li>
+              <svg
+                width="59"
+                height="1"
+                viewBox="0 0 59 1"
+                className="svg_line"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line className="line_el" y1="0.5" x1="30" y2="0.5" />
+                <line className="line_el" x1="29" y1="0.5" x2="59" y2="0.5" />
+              </svg>
             </Link>
-            <Link activeClass="activeLink" spy smooth to="application">
+            <Link className="links" activeClass="activeLink" spy smooth to="application">
               <li>Application</li>
+              <svg
+                width="59"
+                height="1"
+                viewBox="0 0 59 1"
+                className="svg_line"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line y1="0.5" x1="30" y2="0.5" className="line_el" />
+                <line x1="29" y1="0.5" x2="59" y2="0.5" className="line_el" />
+              </svg>
             </Link>
-            <Link activeClass="activeLink" spy smooth to="testimonials">
+            <Link className="links" activeClass="activeLink" spy smooth to="testimonials">
               <li>Testimonials</li>
+              <svg
+                width="59"
+                height="1"
+                viewBox="0 0 59 1"
+                className="svg_line"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line y1="0.5" x1="30" y2="0.5" className="line_el" />
+                <line x1="29" y1="0.5" x2="59" y2="0.5" className="line_el"/>
+              </svg>
             </Link>
-            <Link activeClass="activeLink" spy smooth to="clients">
+            <Link className="links" activeClass="activeLink" spy smooth to="clients">
               <li>Clients</li>
+              <svg
+                width="59"
+                height="1"
+                viewBox="0 0 59 1"
+                className="svg_line"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line y1="0.5" x1="30" y2="0.5" className="line_el" />
+                <line x1="29" y1="0.5" x2="59" y2="0.5" className="line_el" />
+              </svg>
             </Link>
           </ul>
         </div>
@@ -79,7 +119,7 @@ const Topbar = () => {
             </Link>
           </ul>
         </div>
-      </div> 
+      </div>
     </div>
   );
 };

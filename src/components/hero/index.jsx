@@ -48,6 +48,7 @@ const Hero = () => {
             className="transaction_tag"
             data-aos="fade-up"
             data-aos-duration="1000"
+            data-aos-delay="750"
           >
             <div className="tag_left">
               <div className="tag_left_bitcoin">

@@ -1,36 +1,39 @@
 import React, { useRef, useState } from 'react';
 import './testimonials.css';
-import img from '../../assets/images/test.png';
+import person1 from '../../assets/images/person1.jpg';
+import person2 from '../../assets/images/person2.jpg';
+import person3 from '../../assets/images/person3.jpg';
+import person4 from '../../assets/images/person4.jpg';
 import { ArrowLeft, ArrowRight }from '@mui/icons-material';
 
 const TESTIMONIALS = [
   {
-    name: "1Leslie Alexander",
-    img: `${img}`,
+    name: "Leslie Alexander",
+    img: `${person1}`,
     position: "Product Designer - Besnik",
-    text: `After applying the same opacity to both texts, we can see that the difference is clear.
-    Clearly, the result is different. One of them is gray, the other blue-gray`,
+    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Aliquam efficitur sollicitudin metus, et bibendum nisl lacinia in. Morbi mollis orci eu tortor dictum.`,
   },
   {
-    name: "2Kristin Watson",
-    img: `${img}`,
+    name: "Kristin Watson",
+    img: `${person2}`,
     position: "Product Designer - Besnik",
-    text: `After applying the same opacity to both texts, we can see that the difference is clear.
-    Clearly, the result is different. One of them is gray, the other blue-gray`,
+    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Aliquam efficitur sollicitudin metus, et bibendum nisl lacinia in. Morbi mollis orci eu tortor dictum.`,
   },
   {
-    name: "3Kristin Watson",
-    img: `${img}`,
+    name: "Benjamin Luka",
+    img: `${person3}`,
     position: "Product Designer - Besnik",
-    text: `After applying the same opacity to both texts, we can see that the difference is clear.
-    Clearly, the result is different. One of them is gray, the other blue-gray`,
+    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Aliquam efficitur sollicitudin metus, et bibendum nisl lacinia in. Morbi mollis orci eu tortor dictum.`,
   },
   {
-    name: "4Kristin Watson",
-    img: `${img}`,
+    name: "Fred Albert",
+    img: `${person4}`,
     position: "Product Designer - Besnik",
-    text: `After applying the same opacity to both texts, we can see that the difference is clear.
-    Clearly, the result is different. One of them is gray, the other blue-gray`,
+    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Aliquam efficitur sollicitudin metus, et bibendum nisl lacinia in. Morbi mollis orci eu tortor dictum.`,
   }
 ]
 
